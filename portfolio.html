@@ -1,0 +1,406 @@
+<html ng-app="myPortfolio">
+	<head>
+
+    <!--for mobile-devices -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+		<title>Portfolio</title>
+		
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/portfolio-custom.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    
+
+	</head>
+	<body>
+		<a id="menu-toggle" class="btn btn-dark btn-lg toggle" href="#">
+			<i class="fa fa-book fa-fw"></i>
+		</a>
+		<nav id="side-wrapper">
+			<ul class="sidebar-nav">
+				<a id="menu-close" href="#" class="btn btn-light btn-lg dropdown-menu-right toggle"><i class="fa fa-times"></i></a>
+				
+				<li>
+					<a href="#top" onclick=$("menu-close").click();>Home</a>
+				</li>
+				<li>
+                	<a href="#about" onclick = $("#menu-close").click(); >About Me</a>
+	            </li>
+	            <li>
+	                <a href="#ProfExp" onclick = $("#menu-close").click(); >Professional Experience</a>
+	            </li>
+	            <li>
+	                <a href="#AcadProj" onclick = $("#menu-close").click(); >Academic Projects</a>
+	            </li>
+	            <li>
+	                <a href="#skillset" onclick = $("#menu-close").click(); >Skills</a>
+              </li>
+	            <li>
+	                <a href="#Awards" onclick = $("#menu-close").click(); >Awards and Achievements</a>
+	            </li>
+	            <li>
+	                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+	            </li>
+			</ul>
+		</nav>
+
+		<!--Header -->
+		<header id="top" class="header">
+			<div class="text-vertical-center">
+				<h1> Priya Manivannan
+				<hr class="intro-divider"> </h1>
+			</div>
+		</header>
+
+   	<!-- About -->
+		<section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <h2>I am a backend developer and a complete caffeine-dependent person.</h2>
+                   <p class="lead">I completed my masters at Syracuse University and now working at Essextec as an associate consultant. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr><div class="clearfix"></div>
+
+    <!-- Professional Experience -->
+    <section id="ProfExp" class="ProfExp">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center"> <u>PROFESSIONAL EXPERIENCE </u> </h2><br>
+          <div class="col-lg-4 col-sm-4">
+            <br><img src="images/Gemini-logo.png">
+          </div>
+          <div class="col-lg-8 col-sm-8">
+            <ul class="lead">
+              <li> Software Developer Intern : May 2014 - Aug 2014 </li>
+              <li> Worked in development of "Faux-Watson" web app using <b>Java Dynamic Web Project, Spring Framework, IBM Watson Content Analytics, Bluemix Cloud Technology </b>, providing recommendations to prospective customers for tech-enabled solutions based on previous case studies.</li>
+              <li>Implemented a web crawler that downloads 2000+ documents from a site using Java and Java libraries.</li>
+              <li>Utilized technologies like <b>Cloudant No-SQL database, HTML/CSS, JQuery, JSP, Bootstrap.</b></li>
+              <li> Involved in the initial development of a cognitive computing technology prototype that uses IBM Watson instance that is trained using a set of copus in Watson Experience Manager.
+              <li> Analyzed the corpus and extracted required information needed for sampling the prototype.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-4 col-sm-4">
+            <br><img src="images/Infosys.jpg">
+          </div>
+          <div class="col-lg-8 col-sm-8">
+            <ul class="lead">
+              <li> Systems Engineer : Aug 2011 - Aug 2013 </li>
+              <li> Elsevier: Worked on Business Intelligence project where huge amount of raw data was translated to reports based on client requirements using <b>Cognos Impromptu, Microsoft SQL Server, SQL Queries.</b>
+              <li>Developed a tool that takes SQL as input and generates the list of errors that are present in the query.</li>
+              <li>Obtained technical expertise by undergoing 4-month strenuous core technology training.</li>
+              <li>Part of 4-developer team in Automated Retail Management Project done at the end of the training using HTML/CGI with Server/Client scripting with PERL Script</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr><div class="clearfix"></div>
+
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!--Academic Projects-->
+    <section id="AcadProj" class="AcadProj">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center"> <u>ACADEMIC PROJECTS</u> </h2> <br>
+          <div class="col-lg-12 col-sm-12">
+              <ul class="lead">
+              <li>Developed a <b> <a href="images/p2p.png">Peer-To-Peer File Distribution service </a></b> where the file is stored equally among its peers using Java </li>
+              <li>Designed a <b> <a data-toggle="modal" data-target="#myJINI">JINI-based Service Broker </a> </b> for Dynamic Service Combination Framework using Java and Service-Oriented Architecture</li>
+             
+              <!-- Modal -->
+              <div class="modal fade" id="myJINI" role="dialog">
+                <div class="modal-dialog">
+                  <img src="images/jini.png">
+                 </div>
+              </div>
+
+              <li> Implemented <b><a data-toggle="modal" data-target="#myCodeAnalysis">Code Similarity Tool </a></b> which detects common code within a set of source files using scope-type analysis using C++ at Syracuse Univeristy, Jan 2014 - Apr 2014.</li>
+              <!-- Modal -->
+              <div class="modal fade" id="myCodeAnalysis" role="dialog">
+                <div class="modal-dialog">
+                  <img src="images/CodeAnalysis.jpg" width="155%" height="100%">
+                 </div>
+              </div>
+
+              <li><b><a data-toggle="modal" data-target="#RemoteAssessment">Remote Performance Assessment</a></b> to query the performance of concurrent clients and measuring the latency to serve the requests passed through sockets using C++ at Syracuse University, Jan 2014 – Apr 2014</li>
+              <!-- Modal -->
+              <div class="modal fade" id="RemoteAssessment" role="dialog">
+                <div class="modal-dialog">
+                  <img src="images/RemoteAssessment.jpg" width="155%" height="100%">
+                 </div>
+              </div>
+
+              <li>Wrote an IPython Notebook code which can detect <b><a data-toggle="modal" data-target="#SMMCombined">Fake Followers </a></b> for a twitter account using Sci-kit machine learning techniques</li>
+              <!-- Modal -->
+              <div class="modal fade" id="SMMCombined" role="dialog">
+                <div class="modal-dialog">
+                  <img src="images/smm-combined.png" width="155%" height="100%">
+                 </div>
+              </div>
+
+              <li>Developed <b><a data-toggle="modal" data-target="#SMA">Remote Document Vault </a></b> with file insertion and extraction from server in C# using WPF and WCF at Syracuse Univeristy, Aug 2013-Dec 2013.</li>
+              <!-- Modal -->
+              <div class="modal fade" id="SMA" role="dialog">
+                <div class="modal-dialog">
+                  <img src="images/sma.jpg" width="155%" height="100%">
+                 </div>
+              </div>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <hr><div class="clearfix"></div>
+
+    <!-- Skills -->
+  	<section id="skillset" class="skillset">
+  		<div class="container" width="80%">
+  			<div class="row" ng-controller="hoverController">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <div class="row">
+               <h2 class="text-center"> <u>SKILL SET </u></h2><br>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>PROGRAMMING LANGUAGES</b></font>
+    						<div class="item-skill" ng-mouseover="hoverPrgmming=true" ng-show="!hoverPrgmming" ng-init="hoverPrgmming=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-language fa-5x"></i>
+    							</a>
+                </div>
+    						<div class="item-skill" ng-show="hoverPrgmming" ng-mouseleave="hoverPrgmming=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>C</li>
+      								<li>C++</li>
+      								<li>Java</li>
+      								<li>C Sharp</li>
+      								<li>SQL</li>
+      								<li>PL/SQL</li>
+      								<li>JavaScipt</li>
+      								<li>Python</li>
+      						  </b></ul>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>FRONTEND TOOLS</b></font>
+    						<div class="item-skill" ng-mouseover="hoverFrontEnd=true" ng-show="!hoverFrontEnd" ng-init="hoverFrontEnd=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-desktop fa-5x"></i>
+    							</a>
+    						</div>
+    						<div class="item-skill" ng-show="hoverFrontEnd" ng-mouseleave="hoverFrontEnd=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>Angular</li>
+      								<li>JQuery</li>
+      								<li>HTML/HTML5</li>
+      								<li>CSS/CSS3</li>
+      								<li>BootStrap</li>
+      								<li>Slick</li>
+      								<li>Ladda</li>
+      								<li>Font-Awesome</li>
+      							</b></ul>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>RESTful AND WEB</b></font>
+    						<div class="item-skill" ng-mouseover="hoverWeb=true" ng-show="!hoverWeb" ng-init="hoverWeb=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-server fa-5x"></i>
+    							</a>
+    						</div>
+    						<div class="item-skill" ng-show="hoverWeb" ng-mouseleave="hoverWeb=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>JINI Apache River</li>
+      								<li>JAX-RS</li>
+      								<li>Jersey</li>
+      								<li>Spring MVC</li>
+      								<li>JSP</li>
+      								<li>Servlets</li>
+      								<li>Client-Server Programming using C++ (Sockets) and C# (WPF)</li>
+      						  </b></ul>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>DEVELOPMENT IDE</b></font>
+    						<div class="item-skill" ng-mouseover="hoverDev=true" ng-show="!hoverDev" ng-init="hoverDev=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-terminal fa-5x"></i>
+    							</a>
+    						</div>
+    						<div class="item-skill" ng-show="hoverDev" ng-mouseleave="hoverDev=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>Visual Studio</li>
+      								<li>Eclipse</li>
+      								<li>Git</li>
+      								<li>Cognos Impromptu</li>
+      								<li>Microsoft SQL Server</li>
+      								<li>Watson Content Analytics</li>
+      							</b></ul>
+                  </div>
+    						</div>
+    					</div><br><br><br>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>UTILITY TOOLS</b></font>
+    						<div class="item-skill" ng-mouseover="hoverUtil=true" ng-show="!hoverUtil" ng-init="hoverUtil=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-cog fa-5x"></i>
+    							</a>
+    						</div>
+    						<div class="item-skill" ng-show="hoverUtil" ng-mouseleave="hoverUtil=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>TomCat</li>
+      								<li>Maven</li>
+      								<li>Ant</li>
+      								<li>Cloud Foundry</li>
+      								<li>JSoup</li>
+      								<li>Apache Lucene</li>
+      							</b></ul>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>DATABASE PLATFORM</b></font>
+    						<div class="item-skill" ng-mouseover="hoverDatabase=true" ng-show="!hoverDatabase" ng-init="hoverDatabase=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-database fa-5x"></i>
+    							</a>
+    						</div>
+    						<div class="item-skill" ng-show="hoverDatabase" ng-mouseleave="hoverDatabase=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>Oracle</li>
+      								<li>Microsoft SQL Server</li>
+      							</b></ul>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>CLOUD</b></font>
+    						<div class="item-skill" ng-mouseover="hoverCloud=true" ng-show="!hoverCloud" ng-init="hoverCloud=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-cloud fa-5x"></i>
+    							</a>
+    						</div>
+    						<div class="item-skill" ng-show="hoverCloud" ng-mouseleave="hoverCloud=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>Bluemix</li>
+      								<li>Cloud-Foundry</li>
+      								<li>Cloudant No-SQL Database</li>
+      								<li>MongoDB</li>
+      								<li>Amazon Web Services (Beginner's)</li>
+      							</b></ul>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="col-xs-3 col-sm-3 col-md-3">
+    						<br><font color="blue"><b>BASIC KNOWLEDGE</b></font>
+    						<div class="item-skill" ng-mouseover="hoverBasic=true" ng-show="!hoverBasic" ng-init="hoverBasic=false">
+    							<a class="btn-circle btn-lg">
+    								<i class="fa fa-line-chart fa-5x"></i>
+    							</a>
+    						</div>
+    						<div class="item-skill" ng-show="hoverBasic" ng-mouseleave="hoverBasic=false">
+                  <div class = "item-skill">
+      							<ul class="lead"><b>
+      								<li>Node.js</li>
+      								<li>Sci-kit Machine Machine Learning</li>
+      								<li>ElasticSearch</li>
+      							</b></ul>
+                  </div>
+    						</div>
+    					</div>
+            </div>
+          </div>
+    		</div>
+  		</div>
+  	</section>
+
+    <br><hr><div class="clearfix"></div>
+
+    <section id="Awards" class="Awards">
+      <div class = "container">
+        <div class="row">
+          <h2 class="text-center"> <u>AWARDS</u> </h2><br>
+          <div class="col-lg-12 col-sm-12">
+            <ul class="lead">
+              <li>Awarded <b>34th rank </b> among 8272 candidates graduated in Degree of Bachelor in Computer Science and
+Engineering.</li>
+            <li>Secured <b>5th place in Software Contest -2010 </b>conducted by Department of CSE and IT in Collaboration with CSI
+Chennai Chapter and achieved Level 3 – Skilled Programmer Level</li>
+            <li>Recognized at Infosys for Best Outstanding Performance and Valuable Contribution</li>
+            <li>Awarded 30% tuition waiver for the MS course at Syracuse University.</li>
+            <li>Received cash award of INR Rs.10,000 for scoring the third best in Computer Science Department.</li>
+            <li>Secured a <b>CGPA of 4.71/5</b> at the end of the Infosys Technical Training - Fastrack Batch</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><hr><div class="clearfix"></div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h4><strong>Portfolio </strong></h4>
+            <p>61 Broadway Suite 925, New York, NY 10006 </p>
+            <ul class="list-unstyled">
+              <li><i class="fa fa-phone fa-fw"></i> (315) 385-9796</li>
+              <li><i class="fa fa-envelope-o fa-fw"></i>  
+              <a href="mailto:priyamaniv@gmail.com">priyamaniv@gmail.com</a>
+              <a href="mailto:pmanivannan@essextec.com">PManivannan@essextec.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+		<!-- JQuery -->
+		<script>
+		$("#menu-toggle").click(function(e){
+			e.preventDefault();
+			$("#side-wrapper").toggleClass("active");
+		});
+		$("#menu-close").click(function(e){
+			e.preventDefault();
+			$("#side-wrapper").toggleClass("active");
+		});
+		</script>
+	</body>
+
+</html>

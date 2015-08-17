@@ -1,0 +1,207 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.text-vertical-center h1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 4.5em;
+	font-weight: 500;
+}
+
+/*Custom button styles*/
+
+.btn-dark {
+	border-radius: 2em;
+	color: #fff;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active{
+	color: #333;
+	background-color: rgba(0,0,0,0.7);
+}
+
+
+.btn-light {
+	border-radius: 2em;
+	color: #333;
+	background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active{
+	color: #333;
+	background-color: rgba(255,255,255,0.8);
+}
+
+/*Custom Horizontal Rule*/
+
+hr.small{
+	max-width: 100px;
+}
+
+
+/*Side bar menu*/
+
+#menu-toggle{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.toggle{
+	margin: 5px 5px 0 0;
+}
+
+#side-wrapper{
+	z-index: 2;
+	position: fixed;
+	right: 0;
+	width: 250px;
+	height: 100%;
+	margin-right: -250px;
+	overflow-y: auto;
+	background: #222;
+	-webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav{
+	position: absolute;
+	top: 0;
+	right:0;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.sidebar-nav li{
+	text-indent: 20px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a{
+	display: block;
+	color: #999;
+	text-decoration: none;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+	color: #fff;
+	background: rgba(255,255,255,0.2);
+}
+
+
+
+#side-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+#menu-close{
+	color: #fff;
+	background-color: rgba(255,255,255,0);
+}
+
+
+
+/*Header*/
+.header{
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../images/coffee-with-laptop-2.jpg) no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff ;
+}
+
+.header h1{
+	display: block;
+	margin-left: 500px;
+	margin-top: 100px;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+/*About*/
+.about{
+	padding: 50px 0;
+}
+
+/*Skills*/
+.skillset {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.item-skill{
+	margin-bottom: 30px;
+}
+
+.img-skill{
+	margin: 0 auto;
+	min-height: 120px;
+    max-height: 120px;
+}
+
+.btn-circle{
+	width: 40%;
+    height: 40%;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 100px;
+    color: #fff;
+    background: 0 0;
+    display: inline-block;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+
+/*About*/
+.about{
+	padding: 50px 0;
+}
